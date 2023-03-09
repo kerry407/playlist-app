@@ -18,21 +18,22 @@ const cover = document.querySelector("img.cover-img");
 const shuffleButton = document.querySelector("i#shuffle");
 
 
-playButton.addEventListener( "click", function() {
+playButton.addEventListener( "click", (e) => {
     
     if ( playButton.id === "play" ) {
         playlist.play();
-        this.id = "stop";
-        this.textContent = "stop"
+        e.currentTarget.id = "stop";
+        e.currentTarget.textContent = "stop"
     }else {
         playlist.stop();
-        this.id = "play";
-        this.textContent = "play_arrow"
+        e.currentTarget.id = "play";
+        e.currentTarget.textContent = "play_arrow"
     }
     playlist.renderInElement(playListElement);
 });
 
-nextButton.addEventListener( "click", function() {
+
+nextButton.addEventListener( "click", () => {
 
     if ( !playlist.inShuffle ) {
         playlist.next();
@@ -44,7 +45,7 @@ nextButton.addEventListener( "click", function() {
 });
 
 
-previousButton.addEventListener( "click", function() {
+previousButton.addEventListener( "click", () => {
 
     if ( !playlist.inShuffle ) {
         playlist.previous();
@@ -56,13 +57,13 @@ previousButton.addEventListener( "click", function() {
 });
 
 
-shuffleButton.addEventListener( "click", function(){
+shuffleButton.addEventListener( "click", (e) => {
     
     if ( !playlist.inShuffle ){
-        this.style.color = "rgb(86, 247, 12)";
+        e.currentTarget.style.color = "rgb(86, 247, 12)";
         playlist.inShuffle = true;   
     }else {
-        this.style.color = "#fff";
+        e.currentTarget.style.color = "#fff";
         playlist.shuffleOff()
     }
     playlist.renderInElement(playListElement);
