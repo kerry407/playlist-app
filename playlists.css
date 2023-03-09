@@ -194,22 +194,7 @@ html {
 	height: inherit;
   }
 
-  .player .music .info .img {
-	background: url(http://static.stereogum.com/blogs.dir/2/files/2011/12/Adele-21.jpg) center center;
-	background-size: cover;
-  }
- .player .music .info .img {
-	background: url(https://upload.wikimedia.org/wikipedia/en/d/df/RedHotChiliPeppersCalifornication.jpg) center center;
-	background-size: cover;
-  }
-  .player .music .info .img {
-	background: url(http://images.rapgenius.com/59fc635f7dbe6b5cd1e07e5e605c96b5.640x640x1.jpg) center center;
-	background-size: cover;
-  }
-  .player .music  .info .img {
-	background: url(http://djrichiep.us/wp-content/uploads/2014/06/princelgc7F.jpg) center center;
-	background-size: cover;
-  }
+
   .player .music .song-1 .info .titles h5, .player .music .song-1 .info .titles p, .player .music .song-2 .info .titles h5, .player .music .song-2 .info .titles p, .player .music .song-3 .info .titles h5, .player .music .song-3 .info .titles p, .player .music .song-4 .info .titles h5, .player .music .song-4 .info .titles p {
 	margin: 0;
 	color: white;
