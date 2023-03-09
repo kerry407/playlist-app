@@ -92,6 +92,7 @@ html {
 	position: relative;
 	z-index: 3;
 	padding-top: 30px;
+	padding-bottom: 5px;
   }
   .player .player-ui .title {
 	display: flex;
@@ -193,7 +194,6 @@ html {
 	width: inherit;
 	height: inherit;
   }
-
 
   .player .music .song-1 .info .titles h5, .player .music .song-1 .info .titles p, .player .music .song-2 .info .titles h5, .player .music .song-2 .info .titles p, .player .music .song-3 .info .titles h5, .player .music .song-3 .info .titles p, .player .music .song-4 .info .titles h5, .player .music .song-4 .info .titles p {
 	margin: 0;
