@@ -110,8 +110,8 @@ class Playlist {
     shuffleOn() {
         this.stop();
         this.inShuffle = true;
-        const lastItem = this.songs.length;
-        this.nowPlayiingIndex = Math.floor(Math.random() * lastItem );
+        const playlistLength = this.songs.length;
+        this.nowPlayiingIndex = Math.floor(Math.random() * playlistLength);
         this.play();
         console.log(this.nowPlayiingIndex);
     }
