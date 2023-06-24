@@ -1,8 +1,8 @@
 const playlist = new Playlist();
 
-const hello = new Song("Hello", "Adele", "3:43", "http://static.stereogum.com/blogs.dir/2/files/2011/12/Adele-21.jpg");
+const hello = new Song("Hello", "Adele", "3:43", "https://static.stereogum.com/blogs.dir/2/files/2011/12/Adele-21.jpg");
 const californication = new Song("Californication", "Red Hot Chili Pepers", "3:50", "https://upload.wikimedia.org/wikipedia/en/d/df/RedHotChiliPeppersCalifornication.jpg");
-const sixinch = new Song("6 INCH", "Beyonce", "4:00", "http://images.rapgenius.com/59fc635f7dbe6b5cd1e07e5e605c96b5.640x640x1.jpg");
+const sixinch = new Song("6 INCH", "Beyonce", "4:00", "https://images.rapgenius.com/59fc635f7dbe6b5cd1e07e5e605c96b5.640x640x1.jpg");
 
 playlist.add(hello);
 playlist.add(californication);
@@ -16,6 +16,7 @@ const nextButton = document.querySelector("i#next");
 const previousButton = document.querySelector("i#previous");
 const cover = document.querySelector("img.cover-img");
 const shuffleButton = document.querySelector("i#shuffle");
+const song = document.querySelector("div.song-2");
 
 
 playButton.addEventListener( "click", (e) => {
